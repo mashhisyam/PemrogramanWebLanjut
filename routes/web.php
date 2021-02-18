@@ -22,7 +22,7 @@ Route::get('/', function () {
 Route::get('/about', function () {
     echo "1941720055 <br>"; 
     echo "Maulana Malik Ibrahim <br>"; 
-    echo "TI-2A";
+    echo "TI - 2A";
 });
 //3
 Route::get('/articles/{id}', function ($id) {
