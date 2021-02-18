@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\http\Controllers\HomeController;
+use App\http\Controllers\Article;
+use App\http\Controllers\About;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,16 +17,22 @@ use Illuminate\Support\Facades\Route;
 
 //Praktikum 1
 //nomer1
+/*
 Route::get('/', function () {
     echo "Selamat Datang";
 });
-//nomer 2
+nomer 2
 Route::get('/about', function () {
     echo "1941720055 <br>"; 
     echo "Maulana Malik Ibrahim <br>"; 
     echo "TI-2A";
 });
-//nomer 3
+nomer 3
 Route::get('/articles/{id}', function ($id) {
     echo "Halaman Artikel dengan ID".$id;
 });
+*/
+//Praktikum 2
+Route::get('/', [HomeController::class,'index']);
+Route::get('/article/{id}', [Article::class,'article']);
+Route::get('/about', [About::class,'about']);
