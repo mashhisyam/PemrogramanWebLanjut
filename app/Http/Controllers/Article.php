@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class Article extends Controller
 {
     public function article($id){
-        echo "Halaman Artikel dengan ID".$id;
+        echo "News terbaru dengan ID ".$id;
     }
 }
