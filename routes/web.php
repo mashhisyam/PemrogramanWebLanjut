@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Praktikum 1
+//1
 Route::get('/', function () {
-    return view('welcome');
+    echo "Selamat Datang";
+});
+//2
+Route::get('/about', function () {
+    echo "1941720055 <br>"; 
+    echo "Maulana Malik Ibrahim <br>"; 
+    echo "TI-2A";
+});
+//3
+Route::get('/articles/{id}', function ($id) {
+    echo "Halaman Artikel dengan ID".$id;
 });
