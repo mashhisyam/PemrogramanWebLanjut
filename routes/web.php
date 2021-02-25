@@ -50,7 +50,7 @@ Route::prefix('product')->group(function(){
         echo "Daging"; 
     });
     Route::get('minuman', function () {
-        echo "Coca-cola"; 
+        echo "Coca-colaa"; 
     });
 });
 //3
